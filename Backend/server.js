@@ -4,6 +4,7 @@ import { connectDB } from "./config/db.js"
 import 'dotenv/config.js'
 import userRouter from "./routes/userRoute.js"
 import newsRouter from "./routes/newsRoute.js"
+import testRouter from "./routes/testRoutes.js"
 
 
 //app config
@@ -33,6 +34,7 @@ connectDB()
 //api end point
 app.use("/api/user",userRouter)
 app.use("/api/news",newsRouter)
+app.use("/api/test",testRouter)
 
 app.get("/",(req,res)=>{
     res.send("api working")
