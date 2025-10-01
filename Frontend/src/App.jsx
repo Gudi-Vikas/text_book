@@ -8,8 +8,6 @@ import Exams from './pages/Exams/Exams';
 import TestSeries from './pages/TestSeries/TestSeries';
 import Aboutus from './pages/Aboutus/Aboutus';
 import News from './pages/News/News';
-import TestPage from './pages/Test/TestPage';
-import ResultPage from './pages/Result/ResultPage';
 import LoginPopUp from './components/LoginPopUp/LoginPopUp';
 const App = () => {
   const [showLogin, setShowLogin] = useState(false);
@@ -26,8 +24,6 @@ const App = () => {
           <Route  path='/test-series' element={<TestSeries/>}/>
           <Route  path='/about' element={<Aboutus/>}/>
           <Route path='/news' element={<News url={url}/>}/>
-          <Route path='/test' element={<TestPage />} />
-          <Route path='/result' element={<ResultPage />} />
         </Routes>
       </main>
       <Footer />
